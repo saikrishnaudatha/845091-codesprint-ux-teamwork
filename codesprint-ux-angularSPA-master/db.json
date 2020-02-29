@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "placeorder": [
+    {
+      "id": 20,
+      "giftCardAmount1": 30,
+      "giftCardAmount2": 2,
+      "frstname": "rishika",
+      "lastname": "kirala",
+      "address": "IIHT ",
+      "country": "India",
+      "city": "chennai",
+      "state": "tamilnadu",
+      "bfrstname": "sravani",
+      "blastname": "maragani",
+      "email": "sravani@gmail.com",
+      "pincode": "521105",
+      "mobile": "9874563212"
+    },
+    {
+      "id": 64,
+      "giftCardAmount1": 2,
+      "giftCardAmount2": 2,
+      "frstname": "krishna",
+      "lastname": "udatha",
+      "address": "hasgd",
+      "country": "India",
+      "city": "chennai",
+      "state": "tamilnadu",
+      "bfrstname": "mrudhula",
+      "blastname": "kamma",
+      "email": "mrudhula@gmail.com",
+      "pincode": "534505",
+      "mobile": "9876543212"
+    },
+    {
+      "id": 37,
+      "giftCardAmount1": 4,
+      "giftCardAmount2": 4,
+      "frstname": "cdfs",
+      "lastname": "fsdfsdf",
+      "address": "fsdf",
+      "country": "India",
+      "city": "sdfsf",
+      "state": "fsdf",
+      "bfrstname": "sdfs",
+      "blastname": "sdfsd",
+      "email": "d@gmail.com",
+      "pincode": "sdfsd",
+      "mobile": "9876543212"
+    },
+    {
+      "id": 86,
+      "giftCardAmount1": 57,
+      "giftCardAmount2": 35,
+      "frstname": "pranavi",
+      "lastname": "k",
+      "address": "IIHT",
+      "country": "India",
+      "city": "chennai",
+      "state": "TN",
+      "bfrstname": "devika",
+      "blastname": "G",
+      "email": "devika@gmail.com",
+      "pincode": "548963",
+      "mobile": "9876543212"
+    }
+  ],
+  "contact": [
+    {
+      "name": "ghghfh",
+      "email": "dd@gmail.com",
+      "message": "gffghh",
+      "id": 87
+    },
+    {
+      "name": "yuuy",
+      "email": "d@gmail.com",
+      "message": "tyrf",
+      "id": 88
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

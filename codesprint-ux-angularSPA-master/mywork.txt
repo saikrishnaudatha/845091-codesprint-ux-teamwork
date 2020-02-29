@@ -1,0 +1,22 @@
+My associate id:
+845030
+Other team members:
+845029,845030,845064,845091
+Team lead:
+845064
+My Role in team:
+1. To develop homepage and contact us component
+My development files:
+1. home.component.html
+2. contact.component.html
+3.home.component.css
+4.contact.component.css
+5.Reactive Forms
+6.Routing
+
+I was strong in:
+1.Reactive Forms
+2.Routing
+3.UI
+
+

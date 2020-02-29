@@ -1,0 +1,27 @@
+<div class="a">
+    <h1>To Reach Us..</h1>
+    <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+        <div class="form-group ">
+            <label> 
+            <input type="text" formControlName="Name" placeholder="Your Name"class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Name.errors }" /> 
+            <div *ngIf="submitted && f.Name.errors" class="invalid-feedback">
+                <div *ngIf="f.Name.errors.required">Name is required</div>
+            </div> </label>
+                 </div>
+                <div class="form-group ">
+            <label> 
+            <input type="text" formControlName="email" placeholder="Your Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" /> 
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+            </div> </label>
+                 </div>
+         <div class="form-group ">
+            <label> 
+            <textarea formControlName="message" placeholder="Your Message" class="form-control" ></textarea>
+             </label>
+                 </div>
+    
+    <button class="btn btn-primary mr-1" >Send</button>
+   
+    </form>
+    </div>

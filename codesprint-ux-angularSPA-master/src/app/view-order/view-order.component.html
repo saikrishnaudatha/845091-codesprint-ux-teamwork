@@ -1,0 +1,23 @@
+<div class="a">
+<div class="table">
+    <div class="table-responsive ">
+                <tr >
+                    <th>ID</th>
+                    <th>Buyer Name</th>
+                    <th>Shipping Address</th>
+                    <th>City</th>
+                    <th>Amount</th>
+                    <th>Phone</th>
+                </tr>
+                <tr *ngFor="let item of vieworder" >
+                  <td >{{item.id}}</td>
+                  <td>{{item.bfrstname+" "+item.blastname}}</td>
+                  <td>{{item.address}}</td>
+                  <td>{{item.city}}</td>
+                  <td>{{item.giftCardAmount1+"."+item.giftCardAmount2}}</td>
+                  <td>{{item.mobile}}</td>
+                </tr>
+            </div>
+            </div>
+        </div>
+    

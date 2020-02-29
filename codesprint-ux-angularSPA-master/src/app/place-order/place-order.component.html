@@ -1,0 +1,115 @@
+
+<div class="f">
+<div class="container">
+    <form [formGroup]="PlaceOrderForm" (ngSubmit)="onSubmit()">
+        <div class="row a">
+           <div class="col-">
+                <label>GiftCardAmount:</label>
+                <input type="number" placeholder="INR" formControlName="giftCardAmount1" [ngClass]="{ 'is-invalid': submitted && f.giftCardAmount1.errors }">
+                <div *ngIf="submitted && f.giftCardAmount1.errors" class="invalid-feedback">
+                    <div *ngIf="f.giftCardAmount1.errors.required">Amount is required</div>
+                    </div>
+                <input type="number" placeholder="paise" formControlName="giftCardAmount2" [ngClass]="{ 'is-invalid': submitted && f.giftCardAmount2.errors }">
+                <div *ngIf="submitted && f.giftCardAmount2.errors" class="invalid-feedback">
+                    <div *ngIf="f.giftCardAmount2.errors.required">Amount is required</div>
+                    </div>
+         
+        </div>
+    </div>
+        <div class="row a">
+            <div class="col-">
+                <label >Receipent Name</label>
+                <input type="text" formControlName="frstname" placeholder="firstname" [ngClass]="{ 'is-invalid': submitted && f.frstname.errors }">
+                <div *ngIf="submitted && f.frstname.errors" class="invalid-feedback">
+                    <div *ngIf="f.frstname.errors.required">name is required</div>
+                </div>
+                <input type="text" formControlName="lastname" placeholder="lastname" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }">
+                <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastname.errors.required">name is required</div>
+                    </div>
+         </div>
+        </div>
+        <fieldset class="col-md-6">  
+            <legend>ShippingAddress</legend>
+            
+            <div class="row">
+                <div class="col-12">
+                    <label>StreetAddress</label>   <textarea type="text" formControlName="address" [ngClass]="{ 'is-invalid': submitted && f.address.errors }"></textarea>
+                    <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                        <div *ngIf="f.address.errors.required">address is required</div>
+                </div> 
+            </div>
+            </div>
+            <div class="row a">
+                <div class="col-">
+                    <label>city</label> <input type="text" formControlName="city" [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+                    <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                        <div *ngIf="f.city.errors.required">city is required</div>
+                        </div>
+                    <label>State</label><input type="text" formControlName="state" [ngClass]="{ 'is-invalid': submitted && f.state.errors }"> 
+                    <div *ngIf="submitted && f.state.errors" class="invalid-feedback">
+                        <div *ngIf="f.state.errors.required">state is required</div>
+                        </div>
+                        </div>
+            </div>
+           
+            <div class="row a">
+                <div class="col-">
+                    <label>Country</label>
+                    <select id="country" formControlName="country" >
+                        <option value="">Select Country</option>
+                        <option value="Afganistan">Afghanistan</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="India">India</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="USA">USA</option>
+                    </select>
+             </div>
+             <div class="col-">
+                    <label>pincode</label>
+                    <input type="text" formControlName="pincode" [ngClass]="{ 'is-invalid': submitted && f.pincode.errors }">
+                    <div *ngIf="submitted && f.pincode.errors" class="invalid-feedback">
+                        <div *ngIf="f.pincode.errors.required">pincode is required</div>
+                  </div>
+                </div>
+                
+            </div>
+        </fieldset>
+        <div class="row a">
+            <div class="col-12">
+                <label>Buyers Name</label>
+                <input type="text" formControlName="bfrstname" placeholder="firstname" [ngClass]="{ 'is-invalid': submitted && f.bfrstname.errors }">
+                <div *ngIf="submitted && f.bfrstname.errors" class="invalid-feedback">
+                    <div *ngIf="f.bfrstname.errors.required">name is required</div>
+                </div>
+                <input type="text" formControlName="blastname" placeholder="lastname" [ngClass]="{ 'is-invalid': submitted && f.blastname.errors }">
+                <div *ngIf="submitted && f.blastname.errors" class="invalid-feedback">
+                    <div *ngIf="f.blastname.errors.required">name is required</div>
+                    </div>
+            </div>
+        </div>
+        <div class="row a">
+            <div class="col-12">
+                <label>Mobile</label>
+                <input type="text" formControlName="mobile" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }">
+                <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                    <div *ngIf="f.mobile.errors.required">mobile is required</div>
+                    </div>
+            
+                <label>Email</label>
+                <input type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.email">mail is required</div>
+                    </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-md btn-primary" (click)="onSubmit()">PlaceOrder</button>
+            <button type="button" class="btn btn-md btn-primary" (click)="Reset()">Reset</button>
+
+        </div>
+    </form>
+</div>
+</div>
